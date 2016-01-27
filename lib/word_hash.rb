@@ -40,7 +40,7 @@ class WordHash
       10 => "ten",
       20 => "twenty",
       30 => "thirty",
-      40 => "fourtry",
+      40 => "fourty",
       50 => "fifty",
       60 => "sixty",
       70 => "seventy",
