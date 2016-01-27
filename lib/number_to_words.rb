@@ -12,15 +12,11 @@ class NumberToWords
   end
 
   def to_words
-    if @words.has_key?(@num)
-      @words[@num]
-    else
-      calculate_words(@num)
-    end
+    @words.has_key?(@num) ? @words[@num] : calculate_words
   end
 
 
-  def calculate_words(num)
+  def calculate_words
     length = @num_array.length
     if length == 2
       two_digit_number_to_words(@num_array[0], @num_array[1])

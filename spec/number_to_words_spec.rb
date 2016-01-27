@@ -36,6 +36,6 @@ describe "Test number to words conversion" do
   end
 
   it "should return 'five'" do
-    expect(number(500).to_words).to eq("five hundred")
+    expect(number(005).to_words).to eq("five")
   end
 end
