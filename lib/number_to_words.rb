@@ -25,7 +25,7 @@ class NumberToWords
     if length == 2
       two_digit_number_to_words(@num_array[0], @num_array[1])
     elsif length == 3
-      three_digit_number_to_words(@num_array[0]) + two_digit_number_to_words(@num_array[1], num_array[2])
+      @num % 100 == 0 ? divisible_by_hundred : three_digit_number_to_words(@num_array[0], @num_array[1], @num_array[2])
     elsif length > 3
       puts "Only numbers upto 3 digits are supported!"
     else
@@ -38,8 +38,12 @@ class NumberToWords
     @words[num1 * 10] + ' ' + @words[num2]
   end
 
-  def three_digit_number_to_words(num)
-    @words[num] + ' hundred '
+  def three_digit_number_to_words(num1, num2, num3)
+    @words[num1] + ' hundred ' + two_digit_number_to_words(num2, num3)
+  end
+
+  def divisible_by_hundred
+    @words[@num_array[0]] + ' hundred'
   end
 
 end
