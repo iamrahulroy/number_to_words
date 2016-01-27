@@ -2,7 +2,7 @@ require 'byebug'
 
 class NumberToWords
   def initialize(num)
-    @words = NumberToWords.words
+    @words = WordHash.words
     @num = num.to_i # Convert to integer if 'num' passed as string
     @num_array = build_array
   end

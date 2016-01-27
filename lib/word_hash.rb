@@ -1,6 +1,6 @@
 class WordHash
   # merges ones, twos & tens hashes into single hash for convience.
-  def words
+  def self.words
     # Caching the words hash to save space
     @words ||= ones.merge(twos).merge(tens)
   end
@@ -38,7 +38,7 @@ class WordHash
   def self.tens
     {
       10 => "ten",
-      20 => "tweentee",
+      20 => "twenty",
       30 => "thirty",
       40 => "fourtry",
       50 => "fifty",
