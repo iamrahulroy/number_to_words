@@ -1,6 +1,6 @@
 # Number to words in Ruby
 
-Supports only three digit numbers for simplicity. Though it could eaisly be extended to numbers upto millions or trillions.
+Supports only three digit numbers for simplicity. Though it could easily be extended to numbers upto millions or trillions.
 
 Instructions:
 
