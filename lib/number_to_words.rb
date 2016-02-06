@@ -1,5 +1,6 @@
 class NumberToWords
   extend WordHash
+
   def initialize(num)
     @words = NumberToWords.words
     @num = num.to_i # Convert to integer if 'num' passed as string
