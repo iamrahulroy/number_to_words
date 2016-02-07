@@ -9,7 +9,6 @@ module WordHash
            70 => "seventy", 80 => "eighty", 90 => "ninety" }
 
   def words
-    # Caching the words hash to save space
-    words ||= ONES.merge(TWOS).merge(TENS)
+    ONES.merge(TWOS).merge(TENS)
   end
 end
