@@ -7,14 +7,14 @@ class NumberToWords
     @num_array = build_array
   end
 
-  def build_array
-    @num.to_s.split('').map(&:to_i)
-  end
-
   def to_words
     @words.has_key?(@num) ? @words[@num] : calculate_words
   end
 
+  private
+  def build_array
+    @num.to_s.split('').map(&:to_i)
+  end
 
   def calculate_words
     length = @num_array.length
